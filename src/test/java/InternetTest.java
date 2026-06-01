@@ -46,7 +46,7 @@ public class InternetTest
 
 
 
-       //driver.quit();
+       driver.quit();
 
 
 
