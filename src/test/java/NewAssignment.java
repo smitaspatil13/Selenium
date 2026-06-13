@@ -13,15 +13,15 @@ public class NewAssignment {
         driver.get("https://automationexercise.com/");
         driver.manage().window().maximize();
 
-        String name = "Smeta";
-        String email = "Smeta@gmail.com";
+        String name = "Smieta";
+        String email = "Smieta@gmail.com";
 
         driver.findElement(By.linkText("Signup / Login")).click();
         String text=  driver.findElement(By.xpath("//div[@class='signup-form']//h2")).getText();
         System.out.println(text);
 
-        driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Smeta");
-        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("Smeta@gmail.com");
+        driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Smieta");
+        driver.findElement(By.xpath("//input[@data-qa='signup-email']")).sendKeys("Smieta@gmail.com");
         driver.findElement(By.xpath("//button[@data-qa='signup-button']")).click();
         String ExpectName= driver.findElement(By.id("name")).getAttribute("name");
         String ExpectEmail=driver.findElement(By.id("email")).getAttribute("email");
